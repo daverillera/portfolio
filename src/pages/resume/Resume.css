@@ -1,0 +1,37 @@
+.resume_body {
+	background-image: url("../.././images/body_bkd.png");
+	background-size: cover;
+	height: 1000px;
+	padding:5em 5em 0 5em;
+	color: #ffffff;
+}
+
+.resume_row1 {
+	display: flex;
+	background-color: rgba(0, 0, 0, .5);
+	padding: 0 2em 0 2em;
+}
+
+.resume_col1 {
+	flex: 50%;
+}
+
+.resume_col2 {
+	flex: 50%;
+	padding-left: 2em;
+}
+
+.job_title {
+	text-align: left;
+	font-size: 32px;
+	line-height: 200%;
+}
+
+.sec_title {
+	background-color: rgba(0, 0, 0, .5);
+	padding: 1em 1em 0 1em;
+}
+
+.sec_date {
+	font-size: 18px;
+}

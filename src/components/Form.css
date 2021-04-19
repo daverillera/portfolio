@@ -1,0 +1,32 @@
+#contact-form {
+	color: white;
+	text-align: center;
+	width: 90%;
+	margin:auto;
+}
+
+.contact_form {
+	text-align: left;
+	display: flex;
+	padding: 2em;
+}
+
+.form-control {
+	padding: 1em;
+	margin: 1em;
+	width: 80%;
+	background-color: rgba(255, 255, 255, .1);
+	color: #ffffff;
+	border: 0;
+}
+
+.submit_btn {
+	font-size: 18px;
+	width: 20%;
+	margin: auto;
+	color: #ffffff;
+	background-color: #CA2E55;
+	border: 0px;
+	padding: .5em;
+	border-radius: 25px;
+}

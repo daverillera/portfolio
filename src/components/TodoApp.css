@@ -1,0 +1,22 @@
+.todo_header {
+	color: #ffffff;
+	text-align: center;
+	font-size: 34px;
+	letter-spacing: 3px;
+}
+
+.form_body {
+	text-align: center;
+	width: 100%;
+}
+
+.list-group {
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.list-group-item {
+	padding: 1em;
+	border: 1px solid white;
+	margin: 5px;
+}
+

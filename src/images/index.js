@@ -1,0 +1,17 @@
+export const body_bkd = require('./body_bkd.png');
+export const cta_img = require('./cta_img.png');
+export const dave_cta = require('./dave_cta.png');
+export const dr_bkd = require('./dr_bkd.png');
+export const dr_bkd2 = require('./dr_bkd2.png');
+export const dr_logo = require('./dr_logo.png');
+export const profile_pic = require('./profile-pic.jpg');
+export const decoration = require('./decoration.png');
+export const bkd_texture = require('./bkd_texture.png');
+export const line1 = require('./line1.png');
+export const line2 = require('./line2.png');
+export const line3 = require('./line3.png');
+export const site1 = require('./site1.png');
+export const site2 = require('./site2.png');
+export const site3 = require('./site3.png');
+export const site4 = require('./site4.png');
+export const mbl_bkd = require('./mbl_bkd.png');
