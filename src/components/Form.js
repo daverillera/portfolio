@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import './Form.css';
 
-export class Form extends React.Component {
+
+export class cForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +16,7 @@ export class Form extends React.Component {
     e.preventDefault();
     axios({
       method: "POST", 
-      url:"http://localhost:3002/send", 
+      url:"http://localhost:3000/contact", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
@@ -34,18 +34,18 @@ export class Form extends React.Component {
   
   render() {
     return(
-      <div className="contact_form">
-        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+      <div className="md:w-4/5 m-auto sm:w-full text-white">
+        <form id="flex p-16" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <div className="form-group">
-              <input placeholder='NAME' type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+              <input placeholder='NAME' type="text" className="p-4 m-4 w-4/5 border-none text-white bg-white bg-opacity-10" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
           </div>
           <div className="form-group">
-              <input placeholder= 'EMAIL' type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+              <input placeholder= 'EMAIL' type="email" className="p-4 m-4 w-4/5 border-none text-white bg-white bg-opacity-10" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
           </div>
           <div className="form-group">
-              <textarea placeholder= 'message...' className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+              <textarea placeholder= 'message...' className="p-4 m-4 w-4/5 border-none text-white bg-white bg-opacity-10" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </div>
-          <button type="submit" className="submit_btn">Submit</button>
+          <button type="submit" className="sm:m-auto rounded-full text-xl bg-pink text-white p-2 w-3/4 md:w-1/4" >Submit</button>
         </form>
       </div>
     );

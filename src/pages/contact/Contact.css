@@ -1,53 +1,12 @@
 .contact_body {
 	background-image: url("../.././images/body_bkd.png");
 	background-size: cover;
-	text-align: center;
-	color: #ffffff;
-	padding: 7em 1em 1em 1em;
-}
-.contact_row {
-	display: flex;
-}
-
-.cnt_col1 {
-	flex: 20%;
-}
-
-.cnt_col2 {
-	flex: 60%;
-	text-align: center;
-}
-
-.cnt_col3 {
-	flex: 20%;
 }
 
 .contact_cta {
 	background-image: url('../.././images/bkd_texture.png');
 	background-size: cover;
-	color: #ffffff;
-	font-size: 16px;
-	padding: 7em;
 	box-shadow: inset 0 0 30px 30px #00000c;
-	text-align: center;
 }
 
 
-.contact_cta_heading {
-	font-size: 32px;
-	line-height: 150%;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.cta_btn {
-	font-size: 18px;
-	width: 15%;
-	color: #ffffff;
-	background-color: transparent;
-	border: 2px solid;
-	padding: .5em;
-	margin-top: 20px;
-	border-radius: 25px;
-	text-align: center;
-}

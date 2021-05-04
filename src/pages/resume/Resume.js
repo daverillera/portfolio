@@ -3,22 +3,33 @@ import './Resume.css';
 
 const Resume = props => {
 	return(
-		<div className='resume_body' >
-			<h1 className= 'sec_title' >JOB EXPERIENCE</h1>
-			<div className= 'resume_row1'>
-				<div className= 'resume_col1'>
-					<h2 className= 'job_title' >GoDaddy</h2>
-					<h3 className= 'sec_date' >Sales | October 2019 - November 2020</h3>
-					<li>Provide consultation to customers regarding new products and services that will help their businesses succeed.</li>
-					<li>Offer resolution within our scope of support (SOS), providing direction for third party resolution or consultation regarding a paid solution, as appropriate.</li>
-					<li>Troubleshoot GoDaddy products as needed in order to deliver stellar customer service.</li>
-					<li>Take full ownership of and provide a thorough resolution to customers.</li>
-					<li>Meet metrics that could include but are not limited to Customer Availability, Net Promoter Score, and New Sales Per Day.</li>
-					<li>Demonstrate extraordinary interpersonal skills and the ability to thrive, multi-task, and prioritize in a high-volume, dynamic environment.</li>
+		<div className='resume_body p-8 md:bg-fixed sm:bg-local' >
+			<h1 className= 'text-4xl bg-black opacity-90 px-8 font-bold text-left pb-8' >JOB EXPERIENCE</h1>
+			<div className= 'flex bg-black opacity-90 px-4 pb-16'>
+				<div className= 'flex-1'>
+					<h2 className= 'text-white text-2xl text-left leading-loose underline' >GoDaddy</h2>
+					<h3 className= 'text-lg text-grey' >October 2019 - November 2020</h3>
+					<h4 className='text-lg font-semibold pb-4'>Project Manager / Web Specialist 2</h4>
+					<li>Conduct initial consultation with new clients to gather information for their new website/logo design along with setting expectations for the new project.</li>
+					<li>Schedule appointments for revisions/changes to their website/logo design.</li>
+					<li>Work with the builder team with revisions to avoid process inefficiencies.</li>
+					<li>Conduct a final review with the client prior to website launch.</li>
+					<li>Manage 20-40 projects a month while taking 4-7 phone calls a day for new clients.</li>
+					<li>Control calls to ensure call time stays within the allotted scheduled time and no appointments are missed or start late.</li>
+					<br />
+					<h2 className= 'text-white text-2xl text-left leading-loose underline' >Endurance International Group</h2>
+					<h3 className= 'text-lg text-grey' >June 2017 - June 2018</h3>
+					<h4 className='text-lg font-semibold pb-4'>WordPress Developer</h4>
+					<li>Create the website layout and functionality using in-house design resources.</li>
+					<li>Conduct consultative orientations with new clients following a Full Service Design package sale.</li>
+					<li>Conduct site reviews with customers to present completed websites.</li>
+					<li>Effectively assess the scope of the design project, educate customers on process, and set clear expectations to ensure on-time and in-budget delivery.</li>
+					<li> troubleshoot and resolve template functionality issues.</li>
 				</div>
-				<div className= 'resume_col2'>
-					<h2 className= 'job_title' >West Press</h2>
-					<h3 className= 'sec_date' >Web Developer | June 2018 - June 2019</h3>
+				<div className= 'flex-1'>
+					<h2 className= 'text-white text-2xl text-left leading-loose underline'  >West Press</h2>
+					<h3 className= 'text-lg text-grey' >June 2018 - June 2019</h3>
+					<h4 className='text-lg font-semibold pb-4'>Front End Developer</h4>
 					<li>Managed all online inquiries.</li>
 					<li>Maintained company website to aviod down time.</li>
 					<li>Design, develop and manage client websites.</li>
@@ -29,22 +40,24 @@ const Resume = props => {
 					<li>Perform various IT duties with the department as needed.</li>
 				</div>
 			</div>
-			<h1 className= 'sec_title' >EDUCATION</h1>
-			<div className= 'resume_row1'>
-				<div className= 'resume_col1'>
-					<h2 className= 'job_title' >University of Maryland</h2>
-					<h3 className= 'sec_date' >COMPUTER SCIENCE | January 2011 - December 2016</h3>
+			<h1 className= 'text-4xl bg-black opacity-90 px-8 font-bold pb-8 text-left' >EDUCATION</h1>
+			<div className= 'flex bg-black opacity-90 px-4 pb-16'>
+				<div className= 'flex-1'>
+					<h2 className= 'text-white text-2xl text-left leading-loose underline' >University of Maryland</h2>
+					<h3 className= 'text-lg text-grey' >January 2011 - December 2016</h3>
+					<h4 className='text-lg font-semibold'>Computer Science</h4>
 				</div>
-				<div className= 'resume_col2'>
-					<h2 className= 'job_title' >Bethesda Chevy Chase High School</h2>
-					<h3 className= 'sec_date' >August 2007 - June 2010</h3>
+				<div className= 'flex-1'>
+					<h2 className= 'text-white text-2xl text-left leading-loose underline' >Bethesda Chevy Chase High School</h2>
+					<h3 className= 'text-lg text-grey' >August 2007 - June 2010</h3>
 				</div>
 			</div>
-			<h1 className= 'sec_title' >MILITARY HISTORY</h1>
-			<div className= 'resume_row1'>
-				<div className= 'resume_col1'>
-					<h2 className= 'job_title' >Maryland Army National Guard</h2>
-					<h3 className= 'sec_date' >Sergeant/Medic/Combat Lif Saver Instructor | April 2010 - April 2018</h3>
+			<h1 className= 'text-4xl bg-black opacity-90 px-8 font-bold text-left pb-8' >MILITARY HISTORY</h1>
+			<div className= 'flex bg-black opacity-90 px-4 pb-8'>
+				<div className= 'flex-1'>
+					<h2 className= 'text-white text-2xl text-left leading-loose underline' >Maryland Army National Guard</h2>
+					<h3 className= 'text-lg text-grey' >April 2010 - April 2018</h3>
+					<h4 className='text-lg font-semibold pb-4'>Sergeant/Medic/Combat Life Saver Instructor</h4>
 					<li>Conducted annual training to certify soldiers throughout the state in Combat Life Saving.</li>
 					<li>Lead the management and allocation of medical supplies in the unit.</li>
 					<li>Trained other medics in the unit on the clerical side of being a medic.</li>

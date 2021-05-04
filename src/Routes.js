@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import { NavBar } from './components/NavBar'
+import { Nav} from './components/Nav'
 import { Home } from './pages/home';
 import { About } from './pages/about';
 import { Contact } from './pages/contact';
@@ -10,7 +10,7 @@ import { Footer } from './components/Footer';
 export const Routes = () => {
   return(
     <div>
-      <NavBar />
+      <Nav />
       <Switch>
          <Route exact path='/Home' component={Home} />
          <Route exact path='/'><Redirect to='/Home' /></Route>

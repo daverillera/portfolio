@@ -1,84 +1,117 @@
 import React from 'react';
 import './Home.css';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { button } from 'bootstrap';
-import {cta_img, line2, site1, site2, site3, site4 } from '../.././images';
+import {cta_img, line2, site1, site2, site3, site4, dr_logo } from '../.././images';
 import { css, git, html2, react, wp, sql } from '../.././brands';
 import { link } from '../.././icons';
 
 const Home = props => {
 	return(
-		<div>
-			<div className='hero'>
-				<h1 className='hero_header' >DAVE RILLERA</h1>
+		<div className="bg-black-light text-white">
+			<div  className="hero md:py-60 md:bg-fixed sm:py-24 bg-local" >
+				<img src={dr_logo} alt='logo' className='m-auto' />
 			</div>
-			<div className='cta_row'>
-				<div className='cta_col1'>
-					<img src={cta_img} alt='devices' className='cta_img' height='250px' width='250px'/>
+			<div className='cta_row my-4 py-4 md:flex-row flex sm:flex-col bg-none'>
+				<div className='flex-auto float-right '>
+					<img src={cta_img} alt='devices' className='md:scale-75 sm:scale-50 mx-auto'  />
 				</div>
-				<div className='cta_col2'>
-					<h2>RESPONSIVE DESIGNS</h2>
-					<p className='home_p'>
-						Dis aute irure dolor in reprehenderit in 
-			        	voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				<div className='flex-auto m-auto' >
+					<h2 className='text-center mb-4 md:text-5xl sm:text-2xl' >RESPONSIVE DESIGNS</h2>
+					<p className='text-center md:text-xl p-2  sm:text-lg p-0'>
+						Give your viewers an optimized browsing experience with <br />a fluid and flexible layout that adjusts according to their screen size. 
 					</p>
-					<Link to={'/about'}>
-					  <button className= 'toAbout' > LEARN MORE </button>
+					<Link to="#projects">
+					  <button  className= 'flex text-white mx-auto border-2 border border-white rounded-full text-lg p-2' > LEARN MORE </button>
 					</Link>
 				</div>
 			</div>
-			<div className='home_body'>
-			<h2>MY SKILLS</h2>
-				<div className='home_inner_row' >
-					<div className='home_col1' >
-						<img src={html2} alt="icon" height= '75px' /><h3 className= 'label'>HTML</h3><img src={line2} alt='separator' width= '50px' /><p className= 'home_p'>Dis aute irure dolor</p>
+			<div className='home_body bg-fixed p-8' >
+			<h2 className='text-6xl text-center mt-4 mb-28'>MY SKILLS</h2>
+				<div className='flex max-h-60' >
+					<div className='flex-1' >
+						<img src={html2} alt="icon" className='xl:h-1/3 mx-auto sm:h-1/5' />
+						<h3 className= 'text-2xl text-center'>HTML</h3>
+						<img src={line2} alt='separator' className='w-16 mx-auto pt-2' />
+						<p className= 'text-center text-xl hidden'>Dis aute irure dolor</p>
 					</div>
-					<div className='home_col2' >
-						<img src={react}  alt="icon" height= '75px' /><h3 className= 'label'>REACT</h3><img src={line2} alt='separator' width= '50px' /><p className= 'home_p'>Dis aute irure dolor</p>
+					<div className='flex-1' >
+						<img src={react}  alt="icon" className='xl:h-1/3 mx-auto sm:h-1/5' />
+						<h3 className= 'text-2xl text-center'>REACT</h3>
+						<img src={line2} alt='separator' className='w-16 mx-auto pt-2' />
+						<p className= 'text-center text-xl hidden'>Dis aute irure dolor</p>
 
 					</div>
-					<div className='home_col3' >
-						<img src={css} alt="icon" height= '75px' /><h3 className= 'label'>CSS</h3><img src={line2} alt='separator' width= '50px' /><p className= 'home_p'>Dis aute irure dolor</p>
-
-					</div>
-				</div>
-				<br />
-				<div className='home_inner_row2' >
-					<div className='home_col4' >
-						<img src={git} alt="icon" height= '75px' /><h3 className= 'label'>GIT</h3><img src={line2} alt='separator' width= '50px' /><p className= 'home_p'>Dis aute irure dolor</p>
-
-					</div>
-					<div className='home_col5' >
-						<img src={wp} alt="icon" height= '75px' /><h3 className= 'label' >WP</h3><img src={line2} alt='separator' width= '50px' /><p className= 'home_p'>Dis aute irure dolor</p>
-
-					</div>
-					<div className='home_col6' >
-						<img src={sql} alt="icon" height= '75px' /><h3 className= 'label' >SQL</h3><img src={line2} alt='separator' width= '50px' /><p className= 'home_p'>Dis aute irure dolor</p>
+					<div className='flex-1' >
+						<img src={css} alt="icon" className='xl:h-1/3 mx-auto sm:h-1/5' />
+						<h3 className= 'text-2xl text-center'>CSS</h3>
+						<img src={line2} alt='separator' className='w-16 mx-auto pt-2' />
+						<p className= 'text-center text-xl hidden'>Dis aute irure dolor</p>
 
 					</div>
 				</div>
-				<br />
-				<h2 className= 'projects' >PREVIOUS PROJECTS</h2>
-				<div className= 'home_inner_row3'>
-					<div className='home_col7'>
-						<img src={site4} alt="icon" className= 'site_image' />
-						<h3 className= 'site_label' >HYVE Technologies</h3>
-						<img src={link} alt="icon" height="20px" className= 'site_icon' /><a href="https://hyve-technologies.com/" className= 'site_link' >https://hyve-technologies.com/</a>
+				<div className='flex mt-0 max-h-60' >
+					<div className='flex-1' >
+						<img src={git} alt="icon" className='h-1/3 mx-auto' />
+						<h3 className= 'text-2xl text-center' >GIT</h3>
+						<img src={line2} alt='separator' className='w-16 mx-auto pt-2' />
+						<p className= 'text-center text-xl hidden'>Dis aute irure dolor</p>
+
 					</div>
-					<div className='home_col8'>
-						<img src={site2} alt="icon" className= 'site_image' /><h3 className= 'site_label' >Global Health Solutiions Group</h3>
-						<img src={link} alt="icon" height="20px" className= 'site_icon' /><a href="https://globalhsg.com/" className= 'site_link' >https://globalhsg.com/</a>
+					<div className='flex-1' >
+						<img src={wp} alt="icon" className='h-1/3 mx-auto' />
+						<h3 className= 'text-2xl text-center' >WP</h3>
+						<img src={line2} alt='separator' className='w-16 mx-auto pt-2' />
+						<p className= 'text-center text-xl hidden'>Dis aute irure dolor</p>
+
+					</div>
+					<div className='flex-1' >
+						<img src={sql} alt="icon" className='h-1/3 mx-auto' />
+						<h3 className= 'text-2xl text-center' >SQL</h3>
+						<img src={line2} alt='separator' className='w-16 mx-auto pt-2' />
+						<p className= 'text-center text-xl hidden'>Dis aute irure dolor</p>
+
 					</div>
 				</div>
-				<div className= 'home_inner_row4'>
-					<div className='home_col9'>
-						<img src={site1} alt="icon" className= 'site_image' />
-						<h3 className= 'site_label' >Scooter Stop</h3>
-						<img src={link} alt="icon" height="20px" className= 'site_icon' /><a href="https://scooter-stop.com/" className= 'site_link' >https://scooter-stop.com/</a>
+				<h2 className='text-6xl text-center mt-4 mb-20' id="projects" >PREVIOUS PROJECTS</h2>
+				<div className= 'flex xl:flex-row sm:flex-col'>
+					<div className='flex-1'>
+						<a href="https://hyve-technologies.com/">
+						<img src={site4} alt="icon" className= 'float-left transform scale-75 ' />
+						</a>
+						<h3 className= 'text-2xl mt-16' >HYVE Technologies</h3>
+						<p><strong>eCommerce</strong> <br />Custom design after market parts for GLocks and Smith & Wesson handguns.</p>
+						<img src={link} alt="icon" className= 'filter brightness-0 invert h-5 float-left px-1' /
+						><a href="https://hyve-technologies.com/" className= 'md:text-lg sm:text-base' >https://hyve-technologies.com/</a>
 					</div>
-					<div className='home_col10'>
-						<img src={site3} alt="icon" className= 'site_image' /><h3 className= 'site_label' >Global Health Solutiions Group</h3>
-						<img src={link} alt="icon" height="20px" className= 'site_icon' /><a href="https://chuckrenstrom.com/" className= 'site_link' >https://chuckrenstrom.com/</a>
+					<div className='flex-1'>
+						<a href="https://globalhsg.com/">
+						<img src={site2} alt="icon" className= 'float-left transform scale-75 ' />
+						</a>
+						<h3 className= 'text-2xl mt-16' >Global Health Solutions Group</h3>
+						<p>Health care resources provided </p>
+						<img src={link} alt="icon" className= 'filter brightness-0 invert h-5 float-left px-1' />
+						<a href="https://globalhsg.com/" className= 'md:text-lg sm:text-base' >https://globalhsg.com/</a>
+					</div>
+				</div>
+				<div className= 'flex xl:flex-row sm:flex-col'>
+					<div className='flex-1 '>
+						<a href="https://scooter-stop.com/">
+						<img src={site1} alt="icon" className= 'float-left transform scale-75 ' />
+						</a>
+						<h3 className= 'text-2xl mt-16' >Scooter Stop</h3>
+						<p><strong>eCommerce</strong><br />Purchase, finance or rent scooters in South Carolina.</p>
+						<img src={link} alt="icon" className= 'filter brightness-0 invert h-5 float-left px-1' />
+						<a href="https://scooter-stop.com/" className= 'md:text-lg sm:text-base' >https://scooter-stop.com/</a>
+					</div>
+					<div className='flex-1'>
+						<a href="https://chuckrenstrom.com/">
+						<img src={site3} alt="icon" className= 'float-left transform scale-75 ' />
+						</a>
+						<h3 className= 'text-2xl mt-16' >Chuck Renstrom</h3>
+						<p><strong>eCommerce</strong><br />Photography book of fossilized animals in Colorado.</p>
+						<img src={link} alt="icon" className= 'filter brightness-0 invert h-5 float-left px-1' />
+						<a href="https://chuckrenstrom.com/" className= 'md:text-lg sm:text-base' >https://chuckrenstrom.com/</a>
 					</div>
 				</div>
 			</div>

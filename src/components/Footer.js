@@ -1,37 +1,33 @@
 import React from 'react';
-import './Footer.css';
 import dr_logo from '.././images/dr_logo.png';
 import phone_call from '.././icons/phone_call.png';
 import envelope from '.././icons/envelope.png';
-import { Link } from 'react-router-dom';
 
 export class Footer extends React.Component {
 	render() {
 	return(
-		<div className='ftr_row'>
-			<div className='ftr_ctr'>
-				<div className='ftr_ctr_col1'>
+		<div className='pt-20 bg-black-light h-auto'>
+			<div className='flex flex-row m-auto'>
+				<div className='flex-1'></div>
+				<div className='flex-none'>
+					<img src={ dr_logo } alt ='logo' className= 'mx-auto' />
+						<div className='flex flex-row '>
+							<img src={envelope} alt='envelope'  className= 'filter brightness-0 invert h-8 p-1 pr-2 float-left' />
+							<p className='text-left text-white text-xl' >daverillera@gmail.com</p>
+						</div>
+						<div className='flex flex-row'>
+							<img src={phone_call} alt='phone_call' className= 'filter brightness-0 invert h-8 p-1 pr-2 float-left' />
+							<p className='text-left text-white text-xl' >(240) 645-2739</p>
+						</div>
 				</div>
-				<div className='ftr_ctr_col2'>
-				<img src={ dr_logo } alt ='logo' className= 'ftr_logo' />
-				<p className='ftr_p'>
-					<img src={envelope} alt='envelope'  className='icon' />
-					daverillera@gmail.com
-				</p>
-				<p className='ftr_p'>
-					<img src={phone_call} alt='phone_call' className='icon' />
-					(240) 645-2739
-				</p>
-				</div>
-				<div className='ftr_ctr_col3'>
-				</div>
+				<div className='flex-1'></div>
 			</div>
-			<div className='ftr_btm_bar'>
-				<ul className='ftr_nav_ctr'>
-					<Link to='/home' className='ftr_nav_itm'>HOME</Link>
-					<Link to='/about' className='ftr_nav_itm'>ABOUT</Link>
-					<Link to='/contact' className='ftr_nav_itm'>CONTACT</Link>
-					<Link to='/resume' className='ftr_nav_itm'>RESUME</Link>
+			<div className='md:flex p-4 h-16 bg-purple mt-5 sm:hidden'>
+				<ul className='w-4/5 m-auto text-center '>
+					<a href='/home' className='m-auto p-8 text-white text-md'>HOME</a>
+					<a href='/about' className='m-auto p-8 text-white text-md'>ABOUT</a>
+					<a href='/contact' className='m-auto p-8 text-white text-md'>CONTACT</a>
+					<a href='/resume' className='m-auto p-8 text-white text-md'>RESUME</a>
 				</ul>
 			</div>
 		</div>

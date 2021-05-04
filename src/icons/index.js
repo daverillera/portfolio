@@ -42,3 +42,4 @@ export const tag = require('./tag.png');
 export const upload = require('./upload.png');
 export const vector = require('./vector.png');
 export const next_white = require('./next_white.png');
+export const menu = require('./menu.png');
